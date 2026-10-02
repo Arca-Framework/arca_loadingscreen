@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="bg"></div>
+    <video id="bg-video" autoplay loop muted playsinline></video>
+    <div class="shade"></div>
+    <audio id="music" loop></audio>
+
+    <main class="wrap">
+        <header class="top">
+            <img src="assets/logo.png" alt="" class="logo">
+            <div class="players glass"><span class="dot"></span><span id="players">Connecting</span></div>
+        </header>
+
+        <section class="center">
+            <p class="welcome" id="welcome">Welcome</p>
+            <h1 id="server-name">Arca Roleplay</h1>
+            <p class="tagline" id="tagline"></p>
+        </section>
+
+        <section class="bottom">
+            <div class="tips glass">
+                <div class="tips-head"><i class="fa-solid fa-lightbulb"></i> Tip</div>
+                <p id="tip"></p>
+            </div>
+
+            <div class="side">
+                <div class="links" id="links"></div>
+                <div class="team glass" id="team"></div>
+            </div>
+        </section>
+
+        <footer class="progress">
+            <div class="progress-info">
+                <span id="stage">Initialising</span>
+                <span id="percent">0%</span>
+            </div>
+            <div class="track"><div class="fill" id="fill"></div></div>
+        </footer>
+    </main>
+
+    <button class="music-btn glass hidden" id="music-btn" aria-label="Toggle music"><i class="fa-solid fa-volume-high"></i></button>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
