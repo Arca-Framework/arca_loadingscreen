@@ -13,6 +13,7 @@ loadscreen_manual_shutdown 'yes'
 loadscreen_cursor 'yes'
 
 server_script 'server.lua'
+client_script 'client.lua'
 
 files {
     'web/index.html',
